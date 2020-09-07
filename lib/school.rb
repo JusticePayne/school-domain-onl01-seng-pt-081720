@@ -16,4 +16,13 @@ class School
     end
   end
   
+  def grade(grade)
+    @roster[grade]
+  end
   
+  def sort
+    @roster.each do |key, value|
+      value.sort
+    end
+  end
+end
