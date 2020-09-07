@@ -1,7 +1,11 @@
-          class School
-  school = School.new("Bayside High School")
-  school.roster={}
+class School
+  def initialize(name)
+    @name = name
+    @roster = {}
+  end
   
-  school.add_student("Zach Morris", 9)
-  school.roster
+  def roster
+    @roster
+  end
+  
   
